@@ -1,0 +1,187 @@
+.controls-wrapper {
+  height: 90%;
+  width: 100%;
+  color: #e8e8e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  height: 80%;
+}
+
+.gen-selector {
+  flex: 1;
+}
+
+.ord-selector {
+  flex: 1;
+}
+
+input,
+select {
+  background-color: #e8e8e7;
+}
+
+.filters {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.order-filters {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchbar {
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+
+.order {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
+.order label {
+  display: flex;
+}
+
+.checkbox {
+  
+  vertical-align: center;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #e8e8e7;
+  width: 30px;
+  height: 30px;
+}
+
+.top-bar {
+  background-color: #191919;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+select {
+  text-justify: center;
+  text-align: center;
+}
+
+.owntoggle {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.owntoggle label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 877px) {
+  .control {
+    font-size: 2vmax;
+  }
+
+  .controls-wrapper {
+    padding-left: 90px;
+
+    padding-bottom: 1rem;
+  }
+
+  .controls-wrapper h1 {
+    display: none;
+  }
+
+  .owntoggle {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 558px) {
+  .order {
+    flex-direction: column!important;
+  }
+
+  .searchbar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 838px) {
+  .controls-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .owntoggle {
+    padding-left: 0;
+  }
+
+  .searchbar {
+    min-width:70%;
+    font-size: 2.5vmax;
+  }
+
+  .filters {
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .order-filters {
+    flex: 2;
+  }
+  .order {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    padding: 0;
+  }
+
+  .order select,
+  option {
+    text-align: center;
+    text-justify: center;
+  }
+
+  .labels {
+    display: none;
+  }
+
+  .order {
+    width: 100%;
+  }
+
+  .control {
+    font-size: 2.5vmax;
+  }
+}

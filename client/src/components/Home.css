@@ -1,0 +1,9 @@
+.box-wrapper {
+    width:100vw;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+body {
+    background-color: #981914;
+}

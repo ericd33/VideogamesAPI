@@ -1,0 +1,73 @@
+.videogame-box {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+    grid-gap: 1rem;
+    width:100%;
+    height:100%;
+}
+
+
+.vg-box-wrap {
+    width:70vw;
+    display:flex;
+    margin:auto;
+}
+
+.loading-overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+a {
+    display:block;
+}
+.page-button {
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
+    background-color: #e8e8e7;
+    color:#191919;
+    font-weight: bold;
+    text-decoration: none;
+    padding:1rem;
+    box-shadow: 5px 5px #191919;
+    margin-left:1rem;
+    min-width:20px;
+    display:flex;
+    justify-content: center;
+}
+.page-button-number {
+    pointer-events: none;
+}
+
+.page-button:hover {
+    background-color:#ff2828;
+}
+
+.box-wrapper {
+    width:100%;
+}
+.pagination-buttons {
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: center;
+    
+}
+
+@media (max-width: 1031px) {
+    .vg-box-wrap {
+        width: 90vw;
+    }
+}

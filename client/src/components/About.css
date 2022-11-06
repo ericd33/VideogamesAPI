@@ -1,0 +1,31 @@
+.about-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#e8e8e7;
+}
+
+.about-content section {
+    padding-bottom:1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#191919;
+    width:90%;
+}
+
+.about-content svg {
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top:1rem;
+}
+
+.svgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about-content h2 {
+    padding-bottom:.5rem;
+}
